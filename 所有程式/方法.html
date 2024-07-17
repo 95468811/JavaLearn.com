@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Java3</title>
+    <style>
+        .container {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        input {
+            border: 0;
+            background-color: #003C9D;
+            color: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        input:hover {
+                color: #003C9D;
+                background-color: #fff;
+                border: 2px #003C9D solid;
+        }
+
+        .wrap {
+            display: flex;
+            /* 水平置中 */
+            justify-content: center;
+            /* 垂直置中 */
+            align-items: center;
+        }
+
+        #h {
+            width: 100px;
+            text-align: center;
+        }
+
+        #b {
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+            margin-right: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class=wrap">
+        <input type="button" value="回首頁" onclick="location.href='總目錄.html' " id="b">
+    </div>
+    <br><br>
+
+    <div class="wrap" style="background-color:aqua">
+        <h1 style="font-size:50px;color:green">Java3</h1>
+    </div>
+
+    <table border="1" style="height=100%;">
+        <tr>
+            <td>
+                <a href="Java3.html">
+                    <h2 id="h">
+                        物件導向
+                    </h2>
+                </a>
+            </td>
+            <td>
+                <a href="方法.html">
+                    <h2 id="h">
+                        方法(Medth)
+                    </h2>
+                </a>
+            </td>
+            <td>
+                <a href="綜合練習.html">
+                    <h2 id="h">
+                        綜合練習
+                    </h2>
+                </a>
+            </td>
+        </tr>
+    </table>
+    <div class="wrap">
+        <h1 style="background-color:yellowgreen">方法(Modth)</h1>
+    </div>
+    <div class="wrap">
+        <h3>
+            java中的方法就類似於程式中的函式，可以自由設定想要的功能，有需要時呼叫。
+        </h3>
+    </div>
+    <div class="wrap">
+        <h1>建立方法</h1>
+    </div>
+    <div class="wrap">
+        <h3>
+            方法的建立規則是這樣：<br /><br />
+            訪問修飾符 修飾符(可無) 回傳值 方法名(參數(可無)) {}<br><br />
+            public staitc void add(int a) {;&emsp;&emsp;&emsp;//一個有參數，沒有回傳值的靜態方法<br />
+            &emsp;System.out.println("add增加了"+a);<br />
+            }<br /><br />
+            public int autoAdd() {;&emsp;&emsp;&emsp;//一個有回傳值，但沒參數的一般方法<br />
+            &emsp;System.out.println("autoAdd增加了5");<br />
+            &emsp;return 5;&emsp;&emsp;&emsp;//returm回傳了5給方法，故此方法的值就是5<br />
+            }<br /><br />
+            public staitc void main(String[] args) {<br />
+            &emsp;add(10);<br />
+            &emsp;System.out.println(autoAdd());<br />
+            }<br /><br />
+            顯示結果：<br />
+            add增加了10<br />
+            autoAdd增加了5<br />
+            5
+        </h3>
+    </div>
+    <div class="wrap">
+        <h1>方法的重寫(Overload)</h1>
+    </div>
+    <div class="wrap">
+        <h3>
+            Overload就是指一個方法除了參數外其他都一樣。
+            <br /><br />
+            <img src="螢幕擷取畫面 2023-01-10 182144.png" />
+        </h3>
+    </div>
+    <div class="wrap">
+        <h1>方法的覆寫(Override)</h1>
+    </div>
+    <div class="wrap">
+        <h3>
+            Override就是指一個方法除了內容外其他都和父類一樣。<br><br />
+            <img src="螢幕擷取畫面 2023-01-10 182908.png" />
+        </h3>
+    </div>
+</body>
+</html>

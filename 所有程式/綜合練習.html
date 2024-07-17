@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Java3</title>
+    <style>
+        .container {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        input {
+            border: 0;
+            background-color: #003C9D;
+            color: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        input:hover {
+                color: #003C9D;
+                background-color: #fff;
+                border: 2px #003C9D solid;
+        }
+
+        .wrap {
+            display: flex;
+            /* 水平置中 */
+            justify-content: center;
+            /* 垂直置中 */
+            align-items: center;
+        }
+
+        #h {
+            width: 100px;
+            text-align: center;
+        }
+
+        #b {
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+            margin-right: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class=wrap">
+        <input type="button" value="回首頁" onclick="location.href='總目錄.html' " id="b">
+    </div>
+    <br><br>
+
+    <div class="wrap" style="background-color:aqua">
+        <h1 style="font-size:50px;color:green">Java3</h1>
+    </div>
+
+    <table border="1" style="height=100%;">
+        <tr>
+            <td>
+                <a href="Java3.html">
+                    <h2 id="h">
+                        物件導向
+                    </h2>
+                </a>
+            </td>
+            <td>
+                <a href="方法.html">
+                    <h2 id="h">
+                        方法(Medth)
+                    </h2>
+                </a>
+            </td>
+            <td>
+                <a href="綜合練習.html">
+                    <h2 id="h">
+                        綜合練習
+                    </h2>
+                </a>
+            </td>
+        </tr>
+    </table>
+    <div class="wrap">
+        <h1 style="background-color:yellowgreen">綜合練習</h1>
+    </div>
+    <div class="wrap">
+        <h3>
+            設計一個類Support (輔助英雄)，提供一个heal(治療)方法
+            <br />
+            heal(Hero h) //幫指定的英雄加150血
+            <br />
+            heal(Hero h, int hp) //幫指定的英雄加了hp的血
+            <br /><br />
+            在設計一個Hero(英雄)，要有hp、mp、damage等屬性，除了hp外用private修飾
+            <br />
+            為Hero提供一個回傳值為int的方法getHp();
+            <br /><br />
+            在主方法中建立2個Hero物件、1個Support物件。讓Support為2個Hero回不同的血量，並輸出2個Hero的血量
+            <br /><br />
+        </h3>
+    </div>
+    <div class="wrap">
+        <INPUT TYPE="button" value='看答案' onclick="show()" style="height:50px;width:75px">
+    </div>
+    <div class="wrap">
+        <img src="螢幕擷取畫面 2023-01-10 185716.png" id="anwser1" style='display:none'/>
+    </div>
+    <script>
+        function show() {
+            document.getElementById('anwser1').style.display = "block";
+        }
+    </script>
+</body>
+</html>

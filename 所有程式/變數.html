@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Java1</title>
+    <style>
+        .container {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        input {
+            border: 0;
+            background-color: #003C9D;
+            color: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+            input:hover {
+                color: #003C9D;
+                background-color: #fff;
+                border: 2px #003C9D solid;
+            }
+
+        .wrap {
+            display: flex;
+            /* 水平置中 */
+            justify-content: center;
+            /* 垂直置中 */
+            align-items: center;
+        }
+
+        #h {
+            width: 100px;
+            text-align: center;
+        }
+
+        #b {
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class=wrap">
+        <input type="button" value="回首頁" onclick="location.href='總目錄.html' " id="b">
+    </div>
+    <br><br>
+
+    <div class="wrap" style="background-color:aqua">
+        <h1 style="font-size:50px;color:green">Java1</h1>
+    </div>
+
+    <table border="1" style="height=100%;">
+        <tr>
+            <td>
+                <a href="java1.html">
+                    <h2 id="h">
+                        簡介
+                    </h2>
+                </a>
+            </td>
+            <td>
+                <a href="變數.html">
+                    <h2 id="h">
+                        變數
+                    </h2>
+                </a>
+            </td>
+            <td>
+                <a href="運算式.html">
+                    <h2 id="h">
+                        運算式
+                    </h2>
+                </a>
+            </td>
+        </tr>
+    </table>
+    <div class="wrap">
+        <h1>甚麼是變數？</h1>
+
+    </div>
+    <div class="wrap">
+        <h3>
+            變數的定義是:用來命名一個數據的名子。你可以先暫時理解為幫資料取名子
+            <br /><br>EX:你把你的小孩叫做小明，那妳以後呼叫小明就是指你的小孩
+        </h3>
+    </div>
+    <div class="wrap">
+        <h1>來看個實例吧！</h1>
+    </div>
+    <div class="wrap">
+        <h3>
+            int year = 1949;
+        </h3>
+    </div>
+    <div class="wrap">
+        <h3>
+            <int 代表數據類型(整數)
+            <br />year 是標示符
+            <br / >= 是賦值操作符(不是數學上的=)
+            <br />1949 是數字類型的值
+            <br />; 代表該行結束
+            <br /><br />簡單理解為你創造一個名為year的數字"1949"。
+        </h3>
+    </div>
+    <div class="wrap">
+        <h1>變數的類型</h1>
+    </div>
+    <div class="wrap">
+        <h3>
+            一個變數的類型，決定它可以裝載哪種值。Java中一共有8種基本型態，大概可以拆分成
+            <br /><br />整數：+-數字
+            <br /><img src="https://stepimagewm.how2j.cn/513.png" />
+            <br /><br />浮點數(小數)：float(小數點後一位)，double(小數點後2位以上)
+            <br /><img src="https://stepimagewm.how2j.cn/515.png" />
+            <br /><br />布林值：存放判斷需要用的true(1)與false(0)
+            <br><img src="https://stepimagewm.how2j.cn/516.png" />
+            <br /><br />字元：單一字
+            <br />字元(char)只能存放單一個字，值要用單引號''表示。例如'A'或'嗨'
+            <br /><br /><br />字串：多個字連在一起
+            <br />字串(String)並不是基本類型！但他的使用次數和基本類型不相上下，值要用雙引號""表示。例如"你好"或"hellow world"
+        </h3>
+    </div>
+    <div class="wrap">
+        <h3></h3>
+    </div>
+    <div class="wrap">
+        <h1>命名規則</h1>
+    </div>
+    <div class="wrap">
+        <h3>
+            1.變數的命名只能用"數字、字母、$、_"等，且變數名的第一個字不能為數字。
+            <br /><br />2.盡量使用完整的單字命名，而不是縮寫。比如name、years，不要用縮寫n、y。
+            <br /><br />3.不能用關鍵字(int、class等等)，但是可以包含關鍵字。比如char class1 = 'A';
+        </h3>
+    </div>
+</body>
+</html>
